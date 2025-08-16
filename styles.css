@@ -28,19 +28,20 @@ body {
     color:#1a3b34;
 }
 
-.unicodebox {
+.unicodeBox {
     display: block;
-    background: #F88379;
+    width: 96px;
+    height: 96px;
+
+    outline: solid 10px #F88379;;
+    border-radius: 8px;
 
     font-weight: 800;
     font-family: 'Nunito', sans-serif;
     font-size: 120px;
 
-    border-radius: 8px;
-    border-width: 3px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    margin-top: 4px;
+    align-self: baseline;
+    margin-left: 25px;
 }
 
 
