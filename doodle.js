@@ -2,14 +2,9 @@ const canvas = document.getElementById('whiteboard');
 const clear = document.getElementById('clear');
 const ctx = canvas.getContext('2d');
 
-const canvasOffsetX = canvas.offsetLeft;
-const canvasOffsetY = canvas.offsetTop;
-
 let isPainting = false;
-let startX;
-let startY;
 
-const paint = (e) => {
+const paint = (event) => {
     if(!isPainting) {
         return;
     }
@@ -20,20 +15,32 @@ const paint = (e) => {
     ctx.shadowColor = '#9a5852';
 
 
-    ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY);
+    ctx.lineTo(event.offsetX, event.offsetY);
     ctx.stroke();
 }
 
-canvas.addEventListener('mousedown', e => {
+canvas.addEventListener('mousedown', event => {
     isPainting = true;
-    startX = e.clientX;
-    startY = e.clientY;
+    ctx.beginPath();
 });
 
-canvas.addEventListener('mouseup', e => {
+canvas.addEventListener('mouseup', event => {
     isPainting = false;
-    ctx.stroke();
-    ctx.beginPath();
+});
+
+canvas.addEventListener('mouseleave', event => {
+    isPainting = false;
+    if (event.buttons === 1) {
+        ctx.lineTo(event.offsetX, event.offsetY);
+        ctx.stroke()
+    }
+});
+
+canvas.addEventListener('mouseenter', event => {
+    if (event.buttons === 1) {
+        isPainting = true;
+        ctx.beginPath();
+    }
 });
 
 canvas.addEventListener('mousemove', paint);
