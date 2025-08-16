@@ -5,9 +5,10 @@ body {
 
 
 
-
 .name {
     display: flex;
+    align-items: baseline;
+    gap: 12px;
     padding: 0;
     margin-left: 5%;
     margin-top: 5%;
@@ -60,25 +61,6 @@ body {
 
 
 
-
-
-
-
-.whiteboard {
-    display: block;
-    margin-left: 5%;
-    margin-top: 10px;
-
-    background: #205040;
-    border-radius: 16px;
-    box-shadow: 1px 1px 3px #152a26;
-}
-
-
-
-
-
-
 .clear {
     background-color: #205d49;
     color: #1a3b34;
@@ -116,6 +98,28 @@ body {
 }
 
 
+.board {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 5%;
+}
+
+
+
+.whiteboard {
+    background: #205040;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px #152a26;
+}
+
+
+
+.links {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 .link {

@@ -13,6 +13,8 @@
   </head>
 
   <body>
+    <div class="divider"></div>
+
     <div class="name">
       <p>Tristan McGinnis</p>
       <canvas
@@ -25,16 +27,24 @@
 
     <button class="clear" id="clear">🗑</button>
 
-    <canvas
-      id="whiteboard"
-      class="whiteboard"
-      width="945"
-      height="800"
-    ></canvas>
+    <div class="board">
+      <canvas
+        id="whiteboard"
+        class="whiteboard"
+        width="945"
+        height="800"
+      ></canvas>
 
-    <a href="#" class="link">Resume</a>
-    <a href="#" class="link">Contact</a>
-    <a href="#" class="link">Github</a>
+      <div class="links">
+        <a href="#" class="link">Resume</a>
+        <a
+          href="https://www.linkedin.com/in/tristan-mcginnis-a127a4308/"
+          class="link"
+          >LinkedIn</a
+        >
+        <a href="https://github.com/mcginntw" class="link">Github</a>
+      </div>
+    </div>
 
     <p>෴</p>
     <script src="./doodle.js"></script>
