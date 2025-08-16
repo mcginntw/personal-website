@@ -2,11 +2,15 @@ body {
     background-color:#205d49;
 }
 
+
+
+
+
 .name {
+    display: flex;
     padding: 0;
-    padding-left: 5%;
-    padding-top: 5%;
-    margin: 0;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .name p {
@@ -20,22 +24,96 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 120px;
 
-    text-shadow: 1px 1px 3px #152a26;
+    text-shadow: 1px 1px 2px #152a26;
     color:#1a3b34;
 }
+
+.unicodebox {
+    display: block;
+    background: #F88379;
+
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    font-size: 120px;
+
+    border-radius: 8px;
+    border-width: 3px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 4px;
+}
+
+
 
 
 .name p:hover {
     color: #F88379;
     text-shadow: -3px -3px 1px #9a5852;
-    transition: color 0.5s ease, text-shadow 0.5s ease;
+    transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
 }
 
 .name p:not(:hover) {
     transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
-.name p {outline: 1px dash rgba(0,0,0);}
+
+
+
+
+
+
+
+.whiteboard {
+    display: block;
+    margin-left: 5%;
+    margin-top: 10px;
+
+    background: #205040;
+    border-radius: 16px;
+    box-shadow: 1px 1px 3px #152a26;
+}
+
+
+
+
+
+
+.clear {
+    background-color: #205d49;
+    color: #1a3b34;
+    box-shadow: 1px 1px 3px #152a26;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    
+
+    display: inline-block;
+    margin: 4px 2px;
+    padding: 16px 32px;
+    border-radius: 8px;
+
+    border: none;
+}
+
+
+.clear:hover {
+    color: #F88379;
+    text-shadow: -1px -1px 1px #9a5852;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.clear:not(:hover) {
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+.clear:active {
+    background-color: #ffb5ae;
+}
+
 
 
 
@@ -64,3 +142,8 @@ body {
     text-shadow: -2px -2px 1px #9a5852;
     transition: color 0.5s ease, text-shadow 0.5s ease;
 }
+
+.link:not(:hover) {
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
