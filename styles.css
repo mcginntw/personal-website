@@ -1,5 +1,6 @@
 body {
     background-color:#205d49;
+    user-select: none;;
 }
 
 
@@ -61,7 +62,7 @@ body {
 
 
 
-.clear {
+.controller {
     background-color: #205d49;
     color: #1a3b34;
     box-shadow: 1px 1px 3px #152a26;
@@ -73,7 +74,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-size: 32px;
     
-
+    width: 84px;
+    height: 75px;
     display: inline-block;
     margin: 4px 2px;
     padding: 16px 32px;
@@ -83,20 +85,27 @@ body {
 }
 
 
-.clear:hover {
+.controller:hover {
     color: #F88379;
     text-shadow: -1px -1px 1px #9a5852;
     transition: color 0.2s ease, text-shadow 0.2s ease;
 }
 
-.clear:not(:hover) {
+.controller:not(:hover) {
     transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
-.clear:active {
+.controller:active {
     background-color: #ffb5ae;
 }
 
+#draw {
+    
+}
+
+#erase {
+
+}
 
 .board {
     display: flex;
