@@ -12,46 +12,46 @@
     />
   </head>
 
+
   <body>
-    <div class="divider"></div>
+    <div class="shell">
+    <main class="left">
 
-    <div class="name">
-      <p>Tristan McGinnis</p>
-      <canvas
-        id="unicodeBox"
-        class="unicodeBox"
-        width="96"
-        height="96"
-      ></canvas>
-    </div>
+      <div class="name">
+        <p>Tristan McGinnis</p>
+      </div>
 
-    <div class="controls">
-      <button class="controller" id="clear">🗑</button>
-      <button class="controller" id="draw">✎</button>
-      <button class="controller" id="erase">🀱</button>
-    </div>
+      <div class="glyph">
+        <canvas id="unicodeBox" class="unicodeBox" width="96" height="96"></canvas>
+      </div>
 
-    <div class="board">
-      <canvas
-        id="whiteboard"
-        class="whiteboard"
-        width="945"
-        height="800"
-      ></canvas>
-
+      
       <div class="links">
         <a href="#" class="link">Resume</a>
-        <a
-          href="https://www.linkedin.com/in/tristan-mcginnis-a127a4308/"
-          class="link"
-          >LinkedIn</a
-        >
+        <a href="https://www.linkedin.com/in/tristan-mcginnis-a127a4308/" class="link">LinkedIn</a>
         <a href="https://github.com/mcginntw" class="link">Github</a>
       </div>
-    </div>
 
-    <p>෴</p>
-    <script src="./doodle.js"></script>
-    <script src="./roulette.js"></script>
+
+      <div class="board">
+        <div class="controls">
+          <button class="controller" id="clear">🗑</button>
+          <button class="controller" id="draw">✎</button>
+          <button class="controller" id="erase">🀱</button>
+        </div>
+
+        <canvas
+          id="whiteboard"
+          class="whiteboard"
+          width="945"
+          height="800"
+        ></canvas>
+      </div>
+
+      <p>෴</p>
+      <script src="./doodle.js"></script>
+      <script src="./roulette.js"></script>
+    </main>
+    <canvas id="rightPane" class="right" aria-hidden="true"></canvas>
   </body>
 </html>
